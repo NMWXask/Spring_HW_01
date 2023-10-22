@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean id="QuestionDao" class="org.example.Dao.QuestionDao" />-->
+<!--    <bean id="PrinterService" class="org.example.Service.PrinterService" />-->
+
+<!--    <bean id="QuestionService" class="org.example.Service.QuestionServiceImpl">-->
+<!--        <constructor-arg index="0" ref="QuestionDao"/>-->
+<!--        <constructor-arg index="1" ref="PrinterService"/>-->
+<!--    </bean>-->
+
+        <bean id="QuestionDao"
+              class="org.example.Dao.QuestionDao">
+        </bean>
+        <bean id="PrinterService"
+              class="org.example.Service.PrinterService">
+        </bean>
+    <bean id="QuestionService"
+          class="org.example.Service.QuestionServiceImpl">
+        <constructor-arg index = "0" ref="QuestionDao"/>
+        <constructor-arg index = "1" ref="PrinterService"/>
+    </bean>
+</beans>
