@@ -3,11 +3,11 @@ import org.example.Domain.Question;
 import java.util.List;
 
 public class ConsolePrinterServiceImpl implements PrinterService {
- QuestionService questionService;
-
-    public ConsolePrinterServiceImpl(QuestionService questionService) {
-        this.questionService = questionService;
-    }
+// QuestionService questionService;
+//
+//    public ConsolePrinterServiceImpl(QuestionService questionService) {
+//        this.questionService = questionService;
+//    }
 
     @Override
     public void printFileToConsole(List<Question> questions) {
